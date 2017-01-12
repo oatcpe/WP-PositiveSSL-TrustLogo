@@ -21,11 +21,10 @@ document.write(unescape("%3Cscript src='" + tlJsHost + "trustlogo/javascript/tru
 add_action('wp_head', 'trustlogo_header');
 function trustlogo_footer() {
 ?>
-<div style="position:fixed;bottom:0px;left:0px;" >
+<div style="position:fixed;bottom:0px;left:0px;z-index:1041;" >
 <script language="JavaScript" type="text/javascript">
 TrustLogo("<?php echo plugins_url('/comodo_secure_seal.png', __FILE__) ?>", "CL1", "none");
 </script>
-<a  href="https://www.positivessl.com/" id="comodoTL">Positive SSL</a>
 </div>
 <?php
 }
